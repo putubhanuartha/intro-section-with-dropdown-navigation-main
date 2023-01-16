@@ -1,0 +1,12 @@
+.underline {
+  @apply h-1 bg-black transition-all duration-200;
+}
+#hum-btn .active.underline:nth-child(1) {
+  @apply rotate-45 origin-top-left -translate-y-0.5;
+}
+#hum-btn .active.underline:nth-child(2) {
+  @apply -translate-x-7 opacity-0;
+}
+#hum-btn .active.underline:nth-child(3) {
+  @apply -rotate-45 origin-bottom-left;
+}

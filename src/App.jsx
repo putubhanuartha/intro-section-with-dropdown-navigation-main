@@ -1,20 +1,15 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
+import Header from "./components/Header";
 
+export const AppContext = createContext();
 function App() {
-  const [count, setCount] = useState(0);
-
+  // Global hooks
+  const [isCollapse, setIsCollapse] = useState(false);
   return (
-    <div>
-      <h1 className="text-3l font-bold">Hello World</h1>
-      <button
-        onClick={() => {
-          setCount((count) => count + 1);
-        }}
-      >
-        Count this
-      </button>
-      <h3>{count}</h3>
-    </div>
+    <AppContext.Provider value={{ isCollapse, setIsCollapse }}>
+      <div className={isCollapse && "overlay"}></div>
+      <Header />
+    </AppContext.Provider>
   );
 }
 
