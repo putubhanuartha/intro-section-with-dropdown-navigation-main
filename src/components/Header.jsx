@@ -37,17 +37,14 @@ function Dropdown(props) {
       <div
         className={`absolute  right-0 rounded-xl shadow-[0_0_15px_0px_rgba(0,0,0,0.3)] py-4 mt-3 ${
           isActive ? "translate-y-0 opacity-1" : "-translate-y-16 opacity-0"
-        } transition-all duration-300`}
+        } transition-all duration-300 z-20 bg-white`}
       >
         <ul>
           {props.list.map((el) => {
             console.log(el);
             return (
               <li className="mb-3 hover:bg-gray-200">
-                <a
-                  href="#"
-                  className="bg-red-500"
-                >
+                <a href="#">
                   {el.li ? (
                     <span className="flex justify-start w-36 px-4">
                       <img
@@ -111,7 +108,7 @@ export default function Header() {
     }
   };
   return (
-    <div className="bg-white">
+    <div>
       <div className="container mx-auto flex justify-between items-center lg:justify-start p-8 xl:px-16 ">
         <div id="logo">
           <a href="#">

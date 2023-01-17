@@ -3,8 +3,8 @@ import "./Hero.css";
 import datapath from "../../public/assets/img/company-logo/datapath";
 export default function Hero() {
   return (
-    <div className="bg-white">
-      <div className="container mx-auto items-center grid grid-cols-1 md:grid-cols-3">
+    <div className=" relative -z-10">
+      <div className="container mx-auto items-center grid grid-cols-1 md:grid-cols-3  md:px-8">
         <div
           id="image-hero"
           className="md:col-start-3 md:row-start-1 md:col-span-1"
