@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "./Header.css";
 import App, { AppContext } from "../App";
-import arrowUp from "../../public/assets/icon/icon-arrow-up.svg";
-import arrowDown from "../../public/assets/icon/icon-arrow-down.svg";
+import arrowUp from "/assets/icon/icon-arrow-up.svg";
+import arrowDown from "/assets/icon/icon-arrow-down.svg";
 import listNavLink from "../data/listNavLink";
 // Local Components
 function Dropdown(props) {
@@ -55,7 +55,7 @@ function Dropdown(props) {
                         alt=""
                         className="object-fill mr-4 w-4"
                       />
-                      <p>{el.li}</p>
+                      <span>{el.li}</span>
                     </span>
                   ) : (
                     <span className="px-4 w-28 flex">{el}</span>

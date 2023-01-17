@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 export const AppContext = createContext();
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <AppContext.Provider value={{ isCollapse, setIsCollapse }}>
       <div className={isCollapse && "overlay"}></div>
       <Header />
+      <Hero />
     </AppContext.Provider>
   );
 }
