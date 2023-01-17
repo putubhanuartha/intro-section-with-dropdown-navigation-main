@@ -10,3 +10,35 @@
 #hum-btn .active.underline:nth-child(3) {
   @apply -rotate-45 origin-bottom-left;
 }
+
+#navbar-collapse > ul > li > a {
+  @apply text-lg text-medium-gray transition-transform duration-500;
+}
+#navbar-collapse > ul > li:nth-child(2) a {
+  @apply delay-75;
+}
+#navbar-collapse > ul > li:nth-child(3) a {
+  @apply delay-100;
+}
+#navbar-collapse > ul > li:nth-child(4) a {
+  @apply delay-150;
+}
+.hidelist {
+  @apply -translate-x-16;
+}
+#navbar-collapse > ul > li {
+  @apply mb-6;
+}
+#menu-expanded > ul > li {
+  @apply mt-3;
+}
+#menu-expanded.expand {
+  @apply max-h-52;
+}
+#menu-expanded > ul > li.expand {
+  @apply translate-x-7;
+}
+
+#navbar > ul > li {
+  @apply mx-6;
+}
