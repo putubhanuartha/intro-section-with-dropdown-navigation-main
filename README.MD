@@ -20,7 +20,8 @@ Twitter : @BhanuarthaArya
 
 ## How To Run
 
-You can clone or download this repository. Make sure you are on the correct project root path. Run this project using command **npm run dev** on your terminal. The default local server url would be http://127.0.0.1:5173/
+You can clone or download this repository. Make sure you are on the correct project root path. This project use vite module bundler.
+Run this project using command npm run dev on your terminal. The default local server url would be http://127.0.0.1:5173/
 
 ## Suggestions
 
